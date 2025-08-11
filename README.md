@@ -29,19 +29,65 @@ The assistant is built using **LiveKit**, **OpenAI's GPT-4** API, and **Python**
 ### 4. **Save Report**
 - Saves the generated research or lesson brief in **DOCX** or **PDF** format to the **Downloads** folder.
 
-**Voice Assistant Commands:**
-You can interact with the assistant using voice (or text). Here are some example commands:
+## Use Cases
 
-### A.) Daily Update:
-“Daily update on AI agents — save as docx.”
+### **1. Daily Updates on AI Topics**
 
-### B.)Lesson Brief:
-“Brief me for next week's lesson on ControlNets — save as pdf.”
+**Use Case**: The AI instructor needs to stay up-to-date with the latest trends and developments in the AI field, especially in areas like **AI agents**, **LLMs**, or **image generation**.
 
-### C.)Deep Research:
-“Deep research on vector databases for RAG — save it as docx.”
+- **Example Prompt**: 
+  - **User**: "Give me a daily update on AI agents. Save this as a docx file."
+  - **Assistant**: The assistant will provide a summary of the latest advancements in AI agents, including recent articles, research, and developments. It will generate a report and save it as a **DOCX** file for easy reference.
 
-The assistant will perform the search, generate the report, and save it as a file in DOCX or PDF format.
+**Benefit**: The instructor can get a daily digest of key updates, which is helpful for integrating new information into the course curriculum.
+
+---
+
+### **2. Lesson Briefs for Upcoming Sessions**
+
+**Use Case**: The AI instructor wants a summary of the next lesson's key concepts, demo ideas, exercises, and recent developments. This brief helps them plan the session efficiently.
+
+- **Example Prompt**:
+  - **User**: "Brief me for next week's lesson on ControlNets. Use internal notes and add recent updates from the web."
+  - **Assistant**: The assistant pulls the lesson details from the instructor’s internal course materials (uploaded in the Vector Store) and integrates recent updates from the web to create a **lesson brief**. This is saved in **PDF** or **DOCX** format.
+
+**Benefit**: The instructor gets a structured lesson plan that includes core concepts, examples, and any recent changes or trends related to the topic.
+
+---
+
+### **3. Deep Research Reports**
+
+**Use Case**: The AI instructor wants a deep dive into a specific topic for either personal preparation or as reference material for their cohort. The report should pull information from both the instructor's notes and recent updates from the web.
+
+- **Example Prompt**:
+  - **User**: "Deep research on vector databases for RAG. Use the sources `anthropic.com` and `openai.com`."
+  - **Assistant**: The assistant combines internal notes (from the Vector Store) and web sources to produce a **research report** on vector databases for **retrieval-augmented generation (RAG)**. This report is saved in **DOCX** or **PDF** format.
+
+**Benefit**: The instructor can quickly gather the most relevant, comprehensive information on a specific subject, which helps them refine the curriculum or prepare lecture content.
+
+---
+
+### **4. File Search for Specific Content in Course Notes**
+
+**Use Case**: The AI instructor wants to retrieve specific definitions, examples, or case studies directly from the course notes. This tool is particularly useful for pulling out teaching material from previous lectures or lecture slides.
+
+- **Example Prompt**:
+  - **User**: "Search our course notes for the definition of LLM and save the relevant content."
+  - **Assistant**: The assistant searches the uploaded course notes for the definition of **Large Language Models (LLMs)**, extracts the relevant content, and presents it to the user. It can also save the results in **PDF** or **DOCX**.
+
+**Benefit**: This tool helps instructors find the exact information they need from a large collection of course materials quickly.
+
+---
+
+### **5. Web Search for Real-Time Data and Trends**
+
+**Use Case**: The AI instructor needs real-time information about the latest trends, news, or research papers related to AI technologies.
+
+- **Example Prompt**:
+  - **User**: "Search the web for the latest trends in AI image generation."
+  - **Assistant**: The assistant will search the web (across seed URLs or other sources) and provide a summary of the most recent trends in AI image generation.
+
+**Benefit**: The instructor gets the latest updates in real-time, which helps in staying current and modifying lesson content accordingly.
 
 ## Requirements
 
