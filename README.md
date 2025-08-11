@@ -23,7 +23,13 @@ The assistant is built using **LiveKit**, **OpenAI's GPT-4** API, and **Python**
   - Real-time data such as stock prices, weather updates, or sports scores.
   
 ### 2. **File Search Tool**
-- Searches through documents uploaded by the instructor, helping the assistant pull relevant content for specific queries.
+- The assistant can search through uploaded cohort module notes to retrieve relevant content for the current lesson plan and upcoming topics.
+- The lesson plans, module content, and course material are preloaded as documents. When the instructor asks about a specific topic, the assistant uses file search to provide context and content from these documents.
+- For example, when the instructor asks for the next lesson plan on AI Agents, the assistant will use the cohort module notes to provide:
+
+  - Definitions
+  - Key Concepts
+  - Implementation Insights from the notes, and then combine it with web search results.
 
 ### 3. **Deep Research Tool**
 - Combines both **web search** and **file search** to produce comprehensive research reports.
