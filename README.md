@@ -32,13 +32,13 @@ The assistant is built using **LiveKit**, **OpenAI's GPT-4** API, and **Python**
 **Voice Assistant Commands:**
 You can interact with the assistant using voice (or text). Here are some example commands:
 
-Daily Update:
+### A.) Daily Update:
 “Daily update on AI agents — save as docx.”
 
-Lesson Brief:
+### B.)Lesson Brief:
 “Brief me for next week's lesson on ControlNets — save as pdf.”
 
-Deep Research:
+### C.)Deep Research:
 “Deep research on vector databases for RAG — save it as docx.”
 
 The assistant will perform the search, generate the report, and save it as a file in DOCX or PDF format.
