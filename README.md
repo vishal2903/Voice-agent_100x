@@ -1,4 +1,4 @@
-# Voice-agent_100x
+  # Voice-agent_100x
 # AI Voice Assistant for GenAI Cohort
 
 ## Overview
@@ -16,9 +16,11 @@ The assistant is built using **LiveKit**, **OpenAI's GPT-4** API, and **Python**
 ## Features
 
 ### 1. **Web Search Tool**
-- Allows the assistant to fetch up-to-date information from the web.
-- Useful for getting news, stock prices, recent AI developments, etc.
-
+- The assistant can search for up-to-date information on the web related to any AI topic or current events.
+- It can fetch:
+-- Latest research articles on AI
+-- News on advancements in AI technology
+-- Real-time data such as stock prices, weather updates, or sports scores.
 ### 2. **File Search Tool**
 - Searches through documents uploaded by the instructor, helping the assistant pull relevant content for specific queries.
 
