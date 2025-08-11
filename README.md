@@ -29,6 +29,20 @@ The assistant is built using **LiveKit**, **OpenAI's GPT-4** API, and **Python**
 ### 4. **Save Report**
 - Saves the generated research or lesson brief in **DOCX** or **PDF** format to the **Downloads** folder.
 
+**Voice Assistant Commands:**
+You can interact with the assistant using voice (or text). Here are some example commands:
+
+Daily Update:
+“Daily update on AI agents — save as docx.”
+
+Lesson Brief:
+“Brief me for next week's lesson on ControlNets — save as pdf.”
+
+Deep Research:
+“Deep research on vector databases for RAG — save it as docx.”
+
+The assistant will perform the search, generate the report, and save it as a file in DOCX or PDF format.
+
 ## Requirements
 
 Before running the application, you need to install the following dependencies:
