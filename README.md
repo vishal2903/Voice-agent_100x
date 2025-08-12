@@ -35,8 +35,32 @@ The assistant is built using **LiveKit**, **OpenAI's GPT-4** API, and **Python**
 - Combines both **web search** and **file search** to produce comprehensive research reports.
 - The user can request a **daily update**, a **lesson brief**, or a **full research report**.
 
-### 4. **Save Report**
-- Saves the generated research or lesson brief in **DOCX** or **PDF** format to the **Downloads** folder.
+### 4. **Save Reports**
+- Any generated report can be saved locally in:
+  - `.docx`
+  - `.pdf`
+  - `.txt`
+- Files are timestamped and stored in your specified directory.
+
+### 5. **Google Drive Upload**
+- Upload generated reports directly to your Google Drive.
+- First-time setup requires:
+  - Enabling **Google Drive API** in Google Cloud Console
+  - Providing an OAuth client JSON
+  - Completing a one-time consent flow
+- Supports uploading to:
+  - Root Drive
+  - Specific folders (via `GOOGLE_DRIVE_FOLDER_ID`)
+
+### 6. **Gmail Send**
+- Compose and send emails directly from your Gmail account.
+- Two-step process:
+  1. Assistant drafts a polite, concise email based on your request.
+  2. You confirm before sending (“Yes, send it”).
+- First-time setup requires:
+  - Enabling **Gmail API** in Google Cloud Console
+  - Providing an OAuth client JSON (can be the same as Drive)
+  - Completing a one-time consent flow to grant `gmail.send` permission
 
 ## Use Cases
 
@@ -97,6 +121,25 @@ The assistant is built using **LiveKit**, **OpenAI's GPT-4** API, and **Python**
   - **Assistant**: The assistant will search the web (across seed URLs or other sources) and provide a summary of the most recent trends in AI image generation.
 
 **Benefit**: The instructor gets the latest updates in real-time, which helps in staying current and modifying lesson content accordingly.
+
+## Setup for Google Integrations
+
+Add these to your `.env` file:
+Google Drive
+GOOGLE_DRIVE_CREDENTIALS=C:\path\to\client_secret.json
+GOOGLE_DRIVE_TOKEN=C:\path\to\token.json
+GOOGLE_DRIVE_FOLDER_ID=
+
+Gmail
+GOOGLE_OAUTH_CLIENT=C:\path\to\client_secret.json
+GMAIL_TOKEN_PATH=C:\path\to\gmail_token.json
+
+
+## Notes
+- Keep OAuth client and token files **out of version control**.
+- Drive and Gmail can share the same OAuth client JSON but use **different token files**.
+- Token files are auto-generated after the first successful authorization.
+
 
 ## Requirements
 
